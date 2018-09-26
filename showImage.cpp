@@ -14,7 +14,7 @@ int main() {
   std::cout << "This image is " << image.rows << " x "
             << image.cols << std::endl;
 
-  image = cv::imread("/Users/zhaowei/ClionProjects/openCVDemo/img/kui.jpg", cv::IMREAD_GRAYSCALE);
+  image = cv::imread("/Users/zhaowei/Desktop/project/opencv-demo/img/kui.jpg", cv::IMREAD_GRAYSCALE);
 
   if (image.empty()) {
     std::cout << "image read failed" << std::endl;

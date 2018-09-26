@@ -19,5 +19,11 @@ target_link_libraries(laplace ${OpenCV_LIBS})
 add_executable(operator operator.cpp)
 target_link_libraries(operator ${OpenCV_LIBS})
 
-add_executable(external external.cpp)
-target_link_libraries(operator)
+add_executable(remap image-remap/remap.cpp)
+target_link_libraries(remap ${OpenCV_LIBS})
+
+add_executable(color-detector color-detect/main.cpp color-detect/Detector.h color-detect/Detector.cpp)
+target_link_libraries(color-detector ${OpenCV_LIBS})
+
+add_executable(grab-cut grab-cut/grab-cut.cpp)
+target_link_libraries(grab-cut ${OpenCV_LIBS})
